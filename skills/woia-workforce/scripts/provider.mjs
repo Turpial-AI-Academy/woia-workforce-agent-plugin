@@ -2,7 +2,7 @@ import {begin,finish,requireValue,ownKeys,approval,digest} from './guard.mjs';
 export const actions=["workforce.read","workforce.assignment.record","workforce.competence.record","workforce.coverage.read","workforce.coverage.update","workforce.onboarding.record","workforce.guidance.resolve","workforce.offboarding.record"];
 const writes=actions.filter(a=>!["workforce.read","workforce.coverage.read","workforce.guidance.resolve"].includes(a));
 export const initial=organization=>({organization,revision:0,operations:{},history:[],people:{},coverage:{}});
-export function execute(state,q){const c=begin(state,q,actions,writes);if(c.replay)return {state:c.next,result:c.replay};
+export function execute(state,q){q=structuredClone(q);const c=begin(state,q,actions,writes);if(!c.read)requireValue(q.authority.department==='People','PEOPLE_ONLY');  if(c.replay)return {state:c.next,result:c.replay};
  const people=c.next.people??={};const coverage=c.next.coverage??={};let r=people[q.target];
  if(q.action==='workforce.coverage.read')return finish(c,q,structuredClone(coverage[q.target]??null));
  if(q.action==='workforce.read'){requireValue(r,'WORKFORCE_NOT_FOUND');return finish(c,q,structuredClone(r))}
