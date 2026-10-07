@@ -1,0 +1,23 @@
+{
+  "schema": "dev.woia.provider-manifest/v1",
+  "name": "woia-workforce",
+  "capability": "workforce",
+  "version": "0.5.0",
+  "origin": "native",
+  "authoring_profile": "thin",
+  "actions": [
+    "workforce.read",
+    "workforce.assignment.record",
+    "workforce.competence.record",
+    "workforce.coverage.read",
+    "workforce.coverage.update",
+    "workforce.onboarding.record",
+    "workforce.guidance.resolve",
+    "workforce.offboarding.record"
+  ],
+  "support": {
+    "deterministic_contract": "implemented",
+    "storage_adapter": "NOT_QUALIFIED",
+    "external_effects": "unsupported"
+  }
+}
