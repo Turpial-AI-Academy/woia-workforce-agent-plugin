@@ -40,3 +40,9 @@ mise run ci:fast
 mise run ci:extended
 mise run release:check
 ~~~
+
+## W1 provider implementation
+
+Shared Person IDs come from Identity; employee is contextual. Assignment and competence never grant authority; access apply/revoke remains Technology. Guidance resolves approved Knowledge references. Offboarding ends contextual eligibility without claiming permission revocation.
+
+[Portable operation contract](skills/woia-workforce/references/contract.md). Import execute/initial from skills/woia-workforce/scripts/provider.mjs. No backend or live adapter is qualified. Public fixtures are synthetic; authenticated host must resolve current policies and persist transitions atomically with revision fencing.
