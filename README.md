@@ -15,7 +15,6 @@ The plugin adapts to the repository it operates on without requiring the consume
 ~~~text
 plugin.json
 README.md
-CHANGELOG.md
 LICENSE
 skills/**
 # optional source diagnostic when retained by the repository
@@ -41,7 +40,7 @@ mise run ci:extended
 mise run release:check
 ~~~
 
-## W1 provider implementation
+## provider implementation
 
 Shared Person IDs come from Identity; employee is contextual. Assignment and competence never grant authority; access apply/revoke remains Technology. Guidance resolves approved Knowledge references. Offboarding ends contextual eligibility without claiming permission revocation.
 
