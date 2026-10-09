@@ -1,6 +1,5 @@
 # woia-workforce operation contract
 
-Sources: Real Estate ADR-0026, ADR-0027, ADR-0029, ADR-0030; docs21/22/24/25 at eb0a7278188b2f9968e21ed4299f08184d864cac.
 
 Shared Person IDs come from Identity; employee is contextual. Assignment and competence never grant authority; access apply/revoke remains Technology. Guidance resolves approved Knowledge references. Offboarding ends contextual eligibility without claiming permission revocation.
 
